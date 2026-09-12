@@ -130,4 +130,4 @@ Run with: `sqlldr userid=<user>/<pass>@<db> control=load.ctl`
 
 ## 📌 Author
 
-Mohamad Gouse M (Bas)
+Mohamad Gouse M
