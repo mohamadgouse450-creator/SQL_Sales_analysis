@@ -330,3 +330,5 @@ SELECT city FROM samplesuperstore WHERE region = 'West';
 SELECT city FROM samplesuperstore WHERE region = 'South'
 INTERSECT
 SELECT city FROM samplesuperstore WHERE region = 'West';
+
+-----END OF PROJECT-----
