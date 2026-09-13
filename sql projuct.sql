@@ -250,7 +250,6 @@ HAVING SUM(profit) > (
 
 -- =====================================================================
 -- 11. CTEs (COMMON TABLE EXPRESSIONS)
--- Supported in Oracle since 9i, so fully valid in 10g.
 -- =====================================================================
 
 -- Top 5 profitable sub-categories
@@ -285,7 +284,6 @@ WHERE sales IN (
 
 -- =====================================================================
 -- 13. WINDOW (ANALYTIC) FUNCTIONS
--- Analytic functions supported since Oracle 8i.
 -- =====================================================================
 
 -- Rank products by profit within each category
@@ -299,8 +297,6 @@ FROM samplesuperstore;
 
 -- =====================================================================
 -- 14. PIVOT TABLE
--- (Oracle's dedicated PIVOT clause only arrived in 11g, so 10g uses the
---  same portable CASE/SUM approach as the original MySQL version.)
 -- =====================================================================
 
 -- Total sales for each category, pivoted across regions
@@ -315,8 +311,6 @@ GROUP BY Region;
 
 -- =====================================================================
 -- 15. SET OPERATIONS
--- Unlike MySQL, Oracle natively supports MINUS and INTERSECT -
--- no workaround needed.
 -- =====================================================================
 
 -- MINUS (equivalent to EXCEPT):
